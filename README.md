@@ -41,14 +41,19 @@ movie-recommender/
 ├── CB\_tfidfVectorizer.pkl
 ├── CB\_cosine\_sim\_matrix.pkl
 │
+├── cosine\_sim\_matrix\_generator.py     # Script to generate CB\_cosine\_sim\_matrix.pkl
+│
+├── dataset/
+│   └── movies.csv                     # Used by the cosine similarity generator
+│
 ├── mongo\_export/
-│   ├── users.json         # Preloaded user profiles
-│   └── log\_sample.json    # Sample user action logs
+│   ├── users.json                     # Preloaded user profiles
+│   └── log\_sample.json                # Sample user action logs
 │
 ├── requirements.txt
 └── templates/
-├── index.html         # Username entry
-└── recommend.html     # Movie dashboard & recommendations
+├── index.html                     # Username entry
+└── recommend.html                 # Movie dashboard & recommendations
 
 ````
 
@@ -72,9 +77,21 @@ pip install -r requirements.txt
 
 Ensure MongoDB is running locally on `mongodb://localhost:27017/`.
 
-### 4. Import preloaded MonogoDB data 
+### 4. Generate content-based similarity matrix
 
-### 5. Run the app
+Before running the app, you **must create the `CB_cosine_sim_matrix.pkl`** file.
+
+Run this file:
+
+```bash
+python cosine_sim_matrix_generator.py
+```
+
+Make sure `dataset/movies.csv` exists — it is required for vectorizing and generating the similarity matrix.
+
+### 5. Import preloaded MongoDB data
+
+### 6. Run the app
 
 ```bash
 python app.py
@@ -112,6 +129,7 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
     …
   ]
   ```
+
 * **`mongo_export/log_sample.json`**
 
   ```json
@@ -143,4 +161,3 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
 * GitHub: [@mohitkumhar](https://github.com/mohitkumhar)
 * LinkedIn: [@mohitkumhar](https://linkedin.com/in/mohitkumhar)
 * Email: [mohitmolela@gmail.com](mailto:mohitmolela@gmail.com)
-
