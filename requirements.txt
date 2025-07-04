@@ -1,4 +1,4 @@
-setuptools==65.5.0
+setuptools
 
 altair==5.5.0
 asttokens==3.0.0
