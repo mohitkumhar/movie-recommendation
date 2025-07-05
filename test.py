@@ -4,7 +4,7 @@ from unittest.mock import patch
 
 @pytest.fixture
 def client():
-    app.testing = True  # enable flask test mode (turn off error catching)
+    app.testing = True    # enable flask test mode (turn off error catching)
     return app.test_client()    # Return test client that can make HTTP requests to your app
 
 
