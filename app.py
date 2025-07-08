@@ -3,6 +3,7 @@ from flask import Flask, render_template, redirect, url_for, request, flash  # F
 from pymongo import  MongoClient # MongoDB Client
 import pandas as pd # Pandas for Data Handling and time stamp
 import pickle # For loading serialized models and data
+from typing import Optional, List
 
 # -----------------------------------------------------------------------------
 # Database Connection Setup
@@ -19,7 +20,7 @@ logs_collection = db['user_logs']
 # Utility Functions
 # -----------------------------------------------------------------------------
 
-def log_user_interaction(user, action, details=None):
+def log_user_interaction(user: str, action: str, details: Optional[dict] = None):
     """
     Log a user's action into the logs_collection with timestamp.
     Args: 
@@ -52,7 +53,7 @@ movies = pickle.load(open("C_movies.pkl", "rb"))
 movie_list = movies['title'].tolist()
 
 # Helper to fetch movieId from movie title
-def get_movieId(movie_name):
+def get_movieId(movie_name: str):
     """
     Retrieve the movieId corresponding to a given movie title/
 
@@ -71,7 +72,7 @@ model = pickle.load(open("C_filtering_model.pkl", "rb")) # trained collaborative
 ratings = pickle.load(open("C_rating.pkl", "rb")) # DataFrame of existing ratings
 
 # Function to get Colaborative Recommendations
-def get_collaborative_recommendations(user_id, top_n=10):
+def get_collaborative_recommendations(user_id: int, top_n: Optional[int] = 10):
     """
     Recommend movies using colaborative filtering
 
@@ -108,7 +109,7 @@ cosine_similarity_matrix = pickle.load(open("CB_cosine_sim_matrix.pkl", "rb"))
 
 
 # Function to get Content Based Recommendations
-def get_content_based_recommendations(user_history, top_n=10):
+def get_content_based_recommendations(user_history: List[int], top_n: Optional[int] = 10):
     """
     Recommend movies based on content similarity of past watched movies.
 
@@ -131,9 +132,12 @@ def get_content_based_recommendations(user_history, top_n=10):
     return top_recommended_movies[['title']]['title'].tolist()
 
 
-def fetch_movie_id(movie):
+def fetch_movie_id(movie: str):
     """
     Fetch movieId from title of movie
+    
+    Args:
+        movie (str): Name of movie
     """
     return movies[movies['title'] == movie]['movieId'].tolist()[0]
 
