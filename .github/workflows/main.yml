@@ -1,0 +1,34 @@
+name: CI with Pylint
+
+on:
+    push:
+        branches: [ main ]
+
+jobs:
+    build-and-lint:
+        runs-on: ubuntu-latest
+    
+        steps:
+            - name: Checkout repo content
+              uses: actions/checkout@v4
+            
+            - name: Set up Python
+              uses: actions/setup-python@v5
+              with:
+                python-version: '3.10'
+                cache: 'pip'
+            
+            - name: Install Deps
+              run: |
+                pip install --upgrade pip
+                pip install -r ./requirements.txt
+
+            - name: Linting 
+              run: |
+                pip install pylint
+                pylint *.py
+            
+            - name: Testing
+              run: |
+                pip install pytest
+                pytest tests/test.py --maxfail=1 --disable-warnings
