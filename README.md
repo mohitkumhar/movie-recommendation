@@ -35,13 +35,13 @@ A prototype web application that offers personalized movie recommendations using
 movie-recommender/
 │
 ├── app.py
-├── C\_movies.pkl
-├── C\_rating.pkl
-├── C\_filtering\_model.pkl
-├── CB\_tfidfVectorizer.pkl
-├── CB\_cosine\_sim\_matrix.pkl
+├── C_movies.pkl
+├── C_rating.pkl
+├── C_filtering_model.pkl
+├── CB_tfidfVectorizer.pkl
+├── CB_cosine_sim_matrix.pkl
 │
-├── cosine\_sim\_matrix\_generator.py     # Script to generate CB\_cosine\_sim\_matrix.pkl
+├── cosine_sim_matrix_generator.py     # Script to generate CB_cosine_sim_matrix.pkl
 │
 ├── dataset/
 │   └── movies.csv                     # Used by the cosine similarity generator
