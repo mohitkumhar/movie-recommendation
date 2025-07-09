@@ -1,0 +1,7119 @@
+[{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f95b"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T20:01:22.656Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f95c"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T21:05:39.793Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f95d"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T03:03:08.327Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f95e"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-27T22:24:12.267Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f95f"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T07:20:12.400Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f961"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T23:35:05.570Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f962"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T06:37:48.361Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f963"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T09:35:12.014Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f964"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T18:26:12.684Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f965"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T11:59:55.407Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f966"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T19:00:39.634Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f968"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T03:39:03.413Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f96b"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T12:14:13.208Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f96c"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T22:04:16.099Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f96d"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T21:33:57.360Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f96e"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T07:30:37.917Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f96f"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T10:24:06.733Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f970"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-04T07:06:14.057Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f971"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T05:29:30.395Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f972"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T10:44:43.443Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f973"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T04:45:44.525Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f974"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T16:38:54.668Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f975"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T10:29:37.297Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f976"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T21:15:43.706Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f977"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T16:30:16.548Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f978"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-04T08:00:41.731Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f979"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T00:17:38.866Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97a"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T23:31:38.316Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97b"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-27T23:52:40.630Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97c"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T01:53:16.780Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97d"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T15:15:30.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97e"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T21:36:28.642Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f97f"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T11:50:40.066Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f980"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T02:03:32.214Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f981"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T12:08:08.451Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f982"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T09:28:36.388Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f983"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T05:40:59.961Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f984"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T16:36:03.211Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f985"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T01:31:14.039Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f986"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T01:56:19.374Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f987"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T01:27:54.558Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f988"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T13:13:15.113Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f989"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T12:58:09.613Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98a"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T16:16:12.481Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98b"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T22:33:00.808Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98c"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T10:15:29.758Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98d"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T04:32:47.889Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98e"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T06:30:23.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f98f"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T02:50:32.344Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f990"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T17:07:40.790Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f991"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T23:54:54.375Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f992"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T23:06:17.195Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f993"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T16:38:53.008Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f994"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T18:46:02.108Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f995"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T23:24:13.844Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f996"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T18:50:50.058Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f997"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T00:07:37.472Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f998"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T15:39:03.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f999"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T21:35:28.906Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99a"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T03:30:42.567Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99b"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T17:34:28.384Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99c"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T06:01:51.933Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99d"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T18:42:40.545Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99e"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T00:25:44.838Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f99f"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T21:31:43.238Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a0"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T07:17:26.495Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a1"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T04:28:01.903Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a2"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T18:00:29.863Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a3"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T14:13:32.044Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a4"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T23:28:20.874Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a5"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T21:44:53.516Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a6"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T08:31:00.974Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a7"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T20:15:39.921Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a8"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T01:19:26.095Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9a9"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T06:50:55.665Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9aa"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T23:31:01.308Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9ab"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T04:25:42.948Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9ac"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T19:52:37.454Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9ad"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T00:53:30.141Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9ae"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T22:29:49.223Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9af"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T08:29:22.296Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b0"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T04:15:40.568Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b1"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T05:29:53.494Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b2"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T22:02:54.515Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b3"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T11:39:54.090Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b4"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T14:38:56.077Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b5"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T17:51:10.479Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b6"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T02:43:21.093Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b7"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T22:40:46.281Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b8"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T02:17:36.496Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9b9"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T01:40:03.458Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9ba"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T03:03:02.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9bb"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-04T04:42:23.392Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9bc"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T22:43:58.239Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9bd"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T03:14:45.719Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331278b9f6fa6049f9be"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T09:28:45.378Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c0"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T20:01:24.785Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c1"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T23:21:39.598Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c2"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T17:01:33.914Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c3"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T08:21:40.121Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c4"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T01:50:11.654Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c5"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T17:16:52.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c6"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T04:15:08.873Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c7"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T13:51:48.982Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c8"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T06:45:28.455Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9c9"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T02:18:52.383Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ca"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T19:15:31.662Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9cb"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T15:29:04.739Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9cc"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T00:42:40.675Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9cd"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T00:49:33.461Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ce"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T14:29:49.642Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9cf"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T07:01:39.439Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d0"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T08:52:43.309Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d1"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T08:01:46.309Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d2"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T12:20:16.168Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d3"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T09:25:20.520Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d4"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T04:10:58.416Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d5"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T12:06:37.589Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d6"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T16:50:43.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d7"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T18:34:57.246Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d8"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T04:14:29.895Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9d9"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T11:55:47.214Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9da"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T11:45:22.749Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9db"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-04T08:25:31.430Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9dc"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T19:21:57.053Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9dd"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T07:54:25.513Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9de"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T04:37:40.687Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9df"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T02:11:37.220Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e0"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T22:22:20.542Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e1"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T23:56:16.634Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e2"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T18:07:02.371Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e3"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T03:35:32.936Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e4"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T00:28:53.269Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e5"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T21:20:32.424Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e6"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T05:33:56.541Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e7"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T16:51:05.442Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e8"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T09:37:19.057Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9e9"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T10:41:48.896Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ea"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T04:33:32.021Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9eb"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T05:43:05.368Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ec"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T09:17:55.454Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ed"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T22:32:57.421Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ee"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T22:49:50.760Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ef"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T16:59:17.338Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f0"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T02:37:08.307Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f1"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T10:28:49.337Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f2"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T17:16:08.684Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f3"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T21:42:30.719Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f4"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T01:45:42.724Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f5"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T03:06:52.381Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f6"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T02:04:52.335Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f7"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T07:11:34.807Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f8"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T19:06:28.746Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9f9"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T02:30:32.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9fa"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T11:26:06.108Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9fb"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T15:40:56.256Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9fc"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T22:02:07.964Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9fd"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T01:04:46.246Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9fe"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T23:55:26.770Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049f9ff"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T13:33:21.474Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa00"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T11:16:53.348Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa01"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T09:18:16.090Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa02"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T03:16:35.402Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa03"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T22:46:20.629Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa04"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T15:59:43.660Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa05"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T22:13:01.082Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa06"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T20:01:51.197Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa07"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T06:24:21.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa08"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T10:18:00.549Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa09"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T08:49:31.015Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0a"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T18:24:50.821Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0b"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T14:40:15.575Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0c"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T01:30:03.462Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0d"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T21:50:27.284Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0e"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T18:34:40.041Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa0f"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-04T14:28:36.908Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa10"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T02:48:08.571Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa11"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T14:35:09.485Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa12"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T04:40:31.824Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa13"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T02:27:17.998Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa14"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T20:23:48.700Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa15"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T04:47:43.815Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa16"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T19:45:22.292Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa17"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T14:55:29.239Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa18"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T23:16:45.143Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa19"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T03:59:31.105Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1a"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T04:18:25.736Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1b"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T06:04:31.643Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1c"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T13:31:30.476Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1d"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T14:11:49.726Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1e"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T00:03:32.178Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa1f"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T11:17:05.581Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa20"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T05:22:02.832Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa21"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T02:33:31.006Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa22"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T02:29:09.213Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868331478b9f6fa6049fa23"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T14:16:09.914Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69727"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T20:04:44.287Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69728"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T16:05:09.308Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69729"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T10:20:25.878Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972a"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T08:02:48.231Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972b"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T19:56:53.108Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972c"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T14:23:29.708Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972d"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T13:25:19.754Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972e"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T21:08:57.507Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6972f"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T04:43:46.260Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69730"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T05:18:12.268Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69731"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T03:25:01.919Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69732"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T05:51:38.166Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69733"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T23:01:14.098Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69734"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T08:59:15.341Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69735"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T13:47:55.388Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69736"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T22:41:16.201Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69737"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T10:18:11.903Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69738"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T13:52:02.045Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69739"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T15:00:51.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973a"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T23:01:39.602Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973b"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T19:21:13.613Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973c"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-04T06:21:24.227Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973d"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T18:39:44.657Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973e"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T14:49:40.664Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6973f"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T08:49:07.557Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69740"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T22:36:28.891Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69741"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T23:48:24.319Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69742"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T08:15:51.370Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69743"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T00:03:23.349Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69744"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T08:45:46.216Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69745"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T21:51:27.181Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69746"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T00:31:19.387Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69747"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T11:55:37.253Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69748"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T21:03:20.376Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69749"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T07:45:18.429Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974a"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T21:20:18.033Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974b"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T06:00:53.659Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974c"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T06:53:29.435Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974d"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T11:33:19.657Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974e"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T07:08:58.998Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6974f"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T12:13:34.900Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69750"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T06:21:22.372Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69751"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T00:20:29.100Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69752"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T12:18:17.114Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69753"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T12:49:37.565Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69754"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T21:38:55.218Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69755"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T22:03:44.208Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69756"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T19:26:08.530Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69757"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T23:17:12.178Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69758"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T12:50:22.714Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69759"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T09:45:23.081Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975a"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T06:55:13.948Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975b"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T13:13:53.419Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975c"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T12:29:36.901Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975d"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T03:57:07.045Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975e"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T10:35:42.254Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6975f"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T22:28:56.825Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69760"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T17:16:59.807Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69761"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T10:45:13.321Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69762"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T07:57:15.039Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69763"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T08:05:02.069Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69764"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T04:59:43.599Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69765"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T13:10:15.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69766"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T00:56:44.370Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69767"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T06:55:35.940Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69768"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T13:11:49.550Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69769"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T04:10:22.619Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976a"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T21:54:41.286Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976b"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T17:46:49.605Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976c"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T09:11:03.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976d"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-04T15:06:38.308Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976e"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T23:10:03.514Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6976f"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T12:10:21.624Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69770"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T18:01:16.434Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69771"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T00:20:38.520Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69772"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T16:55:19.709Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69773"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T02:13:57.561Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69774"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T17:52:41.329Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69775"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T03:00:12.338Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69776"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T10:58:11.383Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69777"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T17:13:52.639Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69778"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T23:15:56.342Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69779"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T11:37:37.332Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977a"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-04T09:25:28.060Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977b"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T11:40:40.317Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977c"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T10:19:04.623Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977d"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T03:48:58.174Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977e"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T21:42:32.963Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6977f"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T20:15:57.971Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69780"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T15:52:03.075Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69781"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T23:58:43.777Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69782"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T00:52:28.032Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69783"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T19:15:15.886Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69784"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T15:53:41.107Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69785"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T23:22:13.401Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69786"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T21:30:00.348Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69787"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T11:44:27.415Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69788"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T05:04:52.020Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a69789"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T18:48:12.918Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833dc8cef0ff684a6978a"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T12:44:09.773Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9794"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T20:04:52.335Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9795"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T07:42:15.998Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9796"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T19:31:30.467Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9797"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T00:15:42.948Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9798"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T07:40:22.518Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac9799"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T08:06:39.386Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979a"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T19:35:01.964Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979b"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T01:22:29.201Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979c"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T06:34:47.869Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979d"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T01:40:43.535Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979e"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T13:57:18.555Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac979f"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T06:38:17.892Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a0"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T10:52:52.737Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a1"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T23:13:38.615Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a2"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T19:27:11.425Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a3"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T04:35:25.083Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a4"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T19:27:48.570Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a5"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T19:59:58.812Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a6"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T10:45:35.415Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a7"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T20:06:41.966Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a8"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T01:35:09.708Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97a9"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T21:31:20.948Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97aa"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T23:14:22.728Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ab"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T20:53:02.983Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ac"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T19:26:34.802Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ad"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T19:27:12.928Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ae"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T17:53:43.074Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97af"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T13:29:58.349Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b0"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T17:41:40.339Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b1"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T03:56:26.641Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b2"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T14:04:51.857Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b3"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T05:42:45.562Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b4"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-27T20:12:55.060Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b5"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T07:18:11.925Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b6"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T22:50:12.696Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b7"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T08:00:56.738Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b8"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T16:24:02.565Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97b9"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T03:53:23.505Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ba"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T15:41:33.742Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97bb"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T05:34:00.018Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97bc"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T20:51:19.864Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97bd"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T15:43:18.220Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97be"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-02T19:06:59.481Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97bf"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T11:28:01.725Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c0"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T13:37:18.283Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c1"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T15:26:09.674Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c2"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T18:25:40.891Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c3"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T21:43:32.633Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c4"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T13:22:53.133Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c5"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T01:32:07.295Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c6"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T07:28:18.045Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c7"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T06:07:02.294Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c8"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T16:05:33.265Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97c9"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T06:30:27.982Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ca"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T14:13:11.184Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97cb"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T18:17:31.347Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97cc"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T10:55:25.540Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97cd"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T03:52:36.516Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ce"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T11:18:25.398Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97cf"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T21:58:14.284Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d0"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T07:34:38.117Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d1"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T17:03:25.205Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d2"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T04:55:08.061Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d3"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-28T18:53:25.671Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d4"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T20:01:16.345Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d5"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T09:23:48.221Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d6"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T20:46:56.960Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d7"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T15:37:24.234Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d8"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T15:14:58.622Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97d9"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T07:18:00.236Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97da"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-04T11:02:12.033Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97db"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T07:01:43.106Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97dc"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-28T16:35:24.604Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97dd"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T09:57:36.766Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97de"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-02T01:41:49.803Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97df"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-04T14:00:21.021Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e0"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Content-Based Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-01T04:56:03.793Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e1"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-28T18:25:02.207Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e2"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T12:47:33.766Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e3"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T06:50:00.753Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e4"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T21:50:20.060Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e5"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-30T05:58:19.228Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e6"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T04:09:15.914Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e7"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-27T20:58:11.710Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e8"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T07:07:33.034Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97e9"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T20:01:19.403Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ea"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-29T18:04:46.587Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97eb"
+  },
+  "user": {
+    "userId": 8,
+    "username": "vikram"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T06:37:04.432Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ec"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-03T23:31:00.093Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ed"
+  },
+  "user": {
+    "userId": 7,
+    "username": "rahul"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-06-29T14:29:16.823Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ee"
+  },
+  "user": {
+    "userId": 2,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T09:18:20.530Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97ef"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-01T20:12:24.588Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f0"
+  },
+  "user": {
+    "userId": 4,
+    "username": "arjun"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-02T16:59:16.317Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f1"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-29T19:51:10.157Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f2"
+  },
+  "user": {
+    "userId": 3,
+    "username": "rohan"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-06-30T08:48:09.504Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f3"
+  },
+  "user": {
+    "userId": 10,
+    "username": "manish"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "12",
+      "34"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "12",
+        "rating": 5
+      },
+      {
+        "movieId": "34",
+        "rating": 3
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-01T02:02:22.290Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f4"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-03T00:02:38.796Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f5"
+  },
+  "user": {
+    "userId": 6,
+    "username": "karan"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T11:34:16.094Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f6"
+  },
+  "user": {
+    "userId": 9,
+    "username": "aarav"
+  },
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-03T13:43:42.964Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "686833e47625b794f0ac97f7"
+  },
+  "user": {
+    "userId": 5,
+    "username": "aditya"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1",
+      "23",
+      "45"
+    ],
+    "rated_movies": [
+      {
+        "movieId": "23",
+        "rating": 4
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-06-30T08:57:32.378Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868e104466cd2bd42d877d3"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "login",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-05T13:53:32.165Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868e115466cd2bd42d877d4"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "request recommendation",
+  "details": {
+    "type": "Collaborative Recommendation"
+  },
+  "timestamp": {
+    "$date": "2025-07-05T13:53:49.960Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868e128466cd2bd42d877d5"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "34405"
+    ],
+    "rated_movies": [
+      {
+        "movie_id": "34405",
+        "rating": "3"
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-05T13:54:08.513Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868e144466cd2bd42d877d6"
+  },
+  "user": {
+    "userId": 1,
+    "username": "mohit"
+  },
+  "action": "save_ratings",
+  "details": {
+    "watched_movies": [
+      "1251"
+    ],
+    "rated_movies": [
+      {
+        "movie_id": "1251",
+        "rating": "3"
+      }
+    ]
+  },
+  "timestamp": {
+    "$date": "2025-07-05T13:54:36.629Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6868e14d466cd2bd42d877d7"
+  },
+  "user": "mohit",
+  "action": "logout",
+  "details": {},
+  "timestamp": {
+    "$date": "2025-07-05T13:54:45.891Z"
+  }
+}]
