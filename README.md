@@ -63,8 +63,8 @@ movie-recommender/
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/mohitkumhar/movie-recommender.git
-cd movie-recommender
+git clone https://github.com/mohitkumhar/movie-recommendation.git
+cd movie-recommendation
 ```
 
 ### 2. Install Python dependencies
