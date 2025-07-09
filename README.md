@@ -46,9 +46,9 @@ movie-recommender/
 ├── dataset/
 │   └── movies.csv                     # Used by the cosine similarity generator
 │
-├── mongo\_export/
+├── mongo_export/
 │   ├── users.json                     # Preloaded user profiles
-│   └── log\_sample.json                # Sample user action logs
+│   └── log_sample.json                # Sample user action logs
 │
 ├── requirements.txt
 └── templates/
