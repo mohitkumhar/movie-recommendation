@@ -1,4 +1,4 @@
-# 🎬 Movie Recommendation System
+#  Movie Recommendation System
 
 A prototype web application that offers personalized movie recommendations using **Flask**, **MongoDB**, and two complementary recommendation techniques:
 
@@ -10,25 +10,25 @@ A prototype web application that offers personalized movie recommendations using
 
 ---
 
-## 🚀 Features
+##  Features
 
-- 🔑 **Username‑only access** — no passwords; 10 test users are preloaded in MongoDB.
-- 🎥 **Movie dashboard**  
+-  **Username‑only access** — no passwords; 10 test users are preloaded in MongoDB.
+-  **Movie dashboard**  
   - Top‑20 globally highest‑rated movies  
   - Interactive selection/search via datalist  
   - Movie poster thumbnails via placeholder API
-- ⭐ **Rate movies** and record watch history.
-- 🧠 **Dual recommendation modes**  
+-  **Rate movies** and record watch history.
+-  **Dual recommendation modes**  
   - **Collaborative Filtering:** predicts unseen‑movie ratings and shows the top‑10 predicted favorites  
   - **Content‑Based Filtering:** suggests top‑10 similar titles based on TF‑IDF and cosine similarity
-- 📝 **User activity logging** (login, rating, recommendation requests, logout) with timestamps.
-- 🗃️ **MongoDB**  
+-  **User activity logging** (login, rating, recommendation requests, logout) with timestamps.
+-  **MongoDB**  
   - `users` collection for user profiles & history  
   - `user_logs` collection for action logs
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 
@@ -59,13 +59,13 @@ movie-recommender/
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/your-username/movie-recommender.git
+git clone https://github.com/mohitkumhar/movie-recommender.git
 cd movie-recommender
-````
+```
 
 ### 2. Install Python dependencies
 
@@ -101,7 +101,7 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
 
-## 🔍 How It Works
+## How It Works
 
 ### Collaborative Filtering
 
@@ -118,7 +118,7 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
 
-## 🗃 Sample Data Files
+## Sample Data Files
 
 * **`mongo_export/users.json`**
 
@@ -143,7 +143,7 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
 
-## 🔮 Future Work
+## Future Work
 
 * **Secure Authentication:** add password hashing & signup workflow
 * **User Profiles & Preferences:** genres, watchlists, favorites
@@ -154,7 +154,7 @@ Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 **Mohit Kumhar**
 
