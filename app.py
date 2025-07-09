@@ -1,9 +1,16 @@
+"""
+Flask Application to Predict Movies for User 
+- Connected with MongoDB
+- Predict Movies based on: Collaborative and Content-Based
+
+"""
+
 # Importting necessary libraries and modules
-from flask import Flask, render_template, redirect, url_for, request, flash  # Flask for web framework
+from typing import Optional, List
+import pickle # For loading serialized models and data
+from flask import Flask, render_template, redirect, url_for, request, flash #Flask for web framework
 from pymongo import  MongoClient # MongoDB Client
 import pandas as pd # Pandas for Data Handling and time stamp
-import pickle # For loading serialized models and data
-from typing import Optional, List
 
 # -----------------------------------------------------------------------------
 # Database Connection Setup
@@ -49,27 +56,22 @@ app.secret_key = "secret-key" # Secret key for session management and flash mess
 # Loading Data and Models
 # -----------------------------------------------------------------------------
 # Movie metadata
-movies = pickle.load(open("C_movies.pkl", "rb"))
+with open("C_movies.pkl", "rb") as f:
+    movies = pickle.load(f)
+
 movie_list = movies['title'].tolist()
 
-# Helper to fetch movieId from movie title
-def get_movieId(movie_name: str):
-    """
-    Retrieve the movieId corresponding to a given movie title/
-
-    Args:
-        movie_name (str): Title of the movie
-    Returns:
-        int: the movieId if found, else None
-    """
-    if movie_name in movies['title'].values:
-        return (movies[movies['title'] == movie_name]['movieId'].tolist()[0])
-
-
 # Collaborative filtering model and ratings data
-C_ratings = pickle.load(open("C_rating.pkl", "rb")) # ratings for collaborative model
-model = pickle.load(open("C_filtering_model.pkl", "rb")) # trained collaborative filtering model
-ratings = pickle.load(open("C_rating.pkl", "rb")) # DataFrame of existing ratings
+
+with open("C_rating.pkl", "rb") as f:
+    C_ratings = pickle.load(f) # ratings for collaborative model
+
+with open("C_filtering_model.pkl", "rb") as f:
+    model = pickle.load(f) # trained collaborative filtering model
+
+with open("C_rating.pkl", "rb") as f:
+    ratings = pickle.load(f) # DataFrame of existing ratings
+
 
 # Function to get Colaborative Recommendations
 def get_collaborative_recommendations(user_id: int, top_n: Optional[int] = 10):
@@ -104,8 +106,11 @@ def get_collaborative_recommendations(user_id: int, top_n: Optional[int] = 10):
 
 
 # For Content Based Recommendation
-tfidfVectorizer = pickle.load(open("CB_tfidfVectorizer.pkl", "rb"))
-cosine_similarity_matrix = pickle.load(open("CB_cosine_sim_matrix.pkl", "rb"))
+with open("CB_tfidfVectorizer.pkl", "rb") as f:
+    tfidfVectorizer = pickle.load(f)
+
+with open("CB_cosine_sim_matrix.pkl", "rb") as f:
+    cosine_similarity_matrix = pickle.load(f)
 
 
 # Function to get Content Based Recommendations
@@ -125,7 +130,9 @@ def get_content_based_recommendations(user_history: List[int], top_n: Optional[i
 
     sorted_indices = sim_score.argsort()[::-1]
 
-    recommended_indices = [i for i in sorted_indices if movies.iloc[i]['movieId'] not in user_history]
+    recommended_indices = [
+        i for i in sorted_indices if movies.iloc[i]['movieId'] not in user_history
+        ]
 
     top_recommended_movies = movies.iloc[recommended_indices[:top_n]]
 
@@ -140,6 +147,99 @@ def fetch_movie_id(movie: str):
         movie (str): Name of movie
     """
     return movies[movies['title'] == movie]['movieId'].tolist()[0]
+
+def fetch_top_n_movies(n: Optional[int] = 20):
+    """
+    Fetch the top-n movies based on highest rating.
+    It retrieves movie titles and IDs
+
+    Args:
+        n (int, optional): Number of top-rated movies to fetch. Defaults to 20.
+    Returns:
+        List[dict]: A list of dictionaries that contains:
+            - 'id': id of Movies
+            - 'title': title of movies
+            - 'poster_url': A placeholder image URL for the movie poster
+    """
+
+    # Top-20 Rated Movies
+    top_n_movies = ratings.sort_values(by="rating", ascending=False)[:n]
+    top_movies = movies[movies["movieId"].isin(top_n_movies['movieId'])]['title'].tolist()
+
+    top_movies_data = []
+    for movie in top_movies:
+        movie_ids = fetch_movie_id(movie)
+        top_movies_data.append(
+            {
+                'id': movie_ids,
+                'title': movie,
+                "poster_url": f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
+            }
+        )
+
+    return top_movies_data
+
+def handle_recommendation(
+        user_id: int,
+        user_history: List[int],
+        login_user: dict,
+        recommendation_type: str
+        ):
+    """
+    Function to handle movie recommendation based on user selection of recommendation type
+    It calls the function that request the model for the recommended movies and returns it
+    
+    Args:
+        user_id (int): The unique ID of the user requesting the recommendation.
+        user_history (List[int]): List of movie_ids that user watched in past.
+        login_user (dict): Dictionary containing user_id and username of the user
+        recommendation_type (str): Type of recommendation  requested by user
+                                 - It can be either 'collab' or 'content'.
+    Returns:
+        List[str]: A list of recommended movie titles.
+    """
+
+    if recommendation_type == 'collab':
+        log_user_interaction(
+            login_user,
+            action="request recommendation",
+            details={"type": "Collaborative Recommendation"}
+            )
+        return get_collaborative_recommendations(user_id=user_id)
+
+    log_user_interaction(
+        login_user,
+        action="request recommendation",
+        details={"type": "Content Based Recommendation"}
+    )
+    return get_content_based_recommendations(user_history=user_history)
+
+
+def extract_movie_inputs(form_data):
+    """
+    Extract watched movie IDs and rated movie data from form inputs.
+
+    Args:
+        form_data (ImmutableMultiDict): The POST form data received from the Flask request.form
+    Returns:
+        watched (List[str]): list of watched movies list
+        rated (List[dict]): list of all movies which the user rated (returns with movie id)
+    """
+
+    watched = []
+    rated = []
+
+    for key in form_data:
+        if key.startswith("watched_"):
+            movie_id = key.split("_")[1]
+            watched.append(movie_id)
+
+        elif key.startswith("rating_"):
+            movie_id = key.split("_")[1]
+            rating_value = request.form(key)
+            rated.append({"movie_id": movie_id, "rating_value": rating_value})
+
+        return watched, rated
 
 
 # -----------------------------------------------------------------------------
@@ -158,57 +258,33 @@ def index():
             login_user = {"userId": user['userId'], "username": user['username']}
             log_user_interaction(login_user, "login") # saving LogIn Successful log
             return redirect(url_for('recommend', user=username))
-        else:
-            flash("Invalid userName not found")
+        flash("Invalid userName not found")
 
     return render_template('index.html')
-
 
 @app.route('/recommend', methods=['GET', 'POST'])
 def recommend():
     """
-    Render recommendation page. Handle form submissions for ratings, recommendation requests, and logout.
+    Render recommendation page. 
+    Handle form submissions for ratings, recommendation requests, and logout.
     """
     user = request.args.get("user")
 
     user_details = users_collection.find_one({'username': user})
     login_user = {"userId": user_details['userId'], "username": user_details['username']}
-    
+
     recommendations = []
     recommendation_type = None
 
-    watched_movies = []
-    rated_movies = []
+    watched_movies, rated_movies = extract_movie_inputs(request.form)
 
-    # Process watched and rated inputs
-    for key in request.form:
-        if key.startswith("watched_"):
-            movie_id = key.split("_")[1]
-            watched_movies.append(movie_id)
-        elif key.startswith("rating_"):
-            movie_id = key.split("_")[1]
-            rating_value = request.form[key]
-            rated_movies.append({"movie_id": movie_id, "rating": rating_value})
-
-    # Top-20 Rated Movies
-    top_20_movies = ratings.sort_values(by="rating", ascending=False)[:20]
-    top_movies = movies[movies["movieId"].isin(top_20_movies['movieId'])]['title'].tolist()
-
-    top_movies_data = []
-    for movie in top_movies:
-        movie_ids = fetch_movie_id(movie)
-        top_movies_data.append(
-            {
-                'id': movie_ids,
-                'title': movie,
-                "poster_url": f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
-            }
-        )
+    # Top-n Rated Movies
+    top_movies_data = fetch_top_n_movies()
 
     if user:
         user_id = users_collection.find_one({'username': user})['userId']
         user_history = users_collection.find_one({'username': user})['moviesHistory']
-        
+
         if request.method == 'POST':
             recommendation_type = request.form.get('recommend_type')
 
@@ -216,8 +292,8 @@ def recommend():
 
             if action == "save_ratings":
                 log_user_interaction(
-                    login_user, 
-                    action="save_ratings", 
+                    login_user,
+                    action="save_ratings",
                     details={
                         "watched_movies": watched_movies,
                         "rated_movies": rated_movies,
@@ -225,13 +301,12 @@ def recommend():
                 )
 
             elif recommendation_type:
-
-                if recommendation_type == 'collab':
-                    log_user_interaction(login_user, action="request recommendation", details={"type": "Collaborative Recommendation"})
-                    mov_titles = get_collaborative_recommendations(user_id=user_id)
-                else:
-                    log_user_interaction(login_user, action="request recommendation", details={"type": "Content Based Recommendation"})
-                    mov_titles = get_content_based_recommendations(user_history=user_history)
+                mov_titles = handle_recommendation(
+                    user_id=user_id,
+                    login_user=login_user,
+                    user_history=user_history,
+                    recommendation_type=recommendation_type
+                    )
 
                 for movie in mov_titles:
                     movie_ids = fetch_movie_id(movie)
@@ -239,7 +314,8 @@ def recommend():
                         {
                             "id": movie_ids,
                             "title": movie,
-                            "poster_url": f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
+                            "poster_url": 
+                                        f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
                         }
                     )
 
@@ -249,7 +325,14 @@ def recommend():
                 return redirect(url_for("index"))
 
     # render recommendations template with data
-    return render_template('recommend.html', user=user, movie_list=movie_list, recommendations=recommendations, recommend_type=recommendation_type, top_movies=top_movies_data)
+    return render_template(
+        'recommend.html',
+        user=user,
+        movie_list=movie_list,
+        recommendations=recommendations,
+        recommend_type=recommendation_type,
+        top_movies=top_movies_data
+        )
 
 
 # -----------------------------------------------------------------------------
