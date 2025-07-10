@@ -83,6 +83,7 @@ Run Docker container of mongoDB
 ```
 docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
 ```
+Ensure MongoDB is running locally on `mongodb://localhost:27017/`
 
 ### 4. Download Dataset
 
@@ -113,7 +114,6 @@ CB_filtering.ipynb      # for Content-Based filtering
 Make sure all `dataset/*.csv` exists - it is required for **Jupyter Notebook** (`.ipynb`) to create `.pkl` files.
 
 ### 6. Import preloaded MongoDB data
-
 
 ### 7. Run the app
 
