@@ -59,7 +59,7 @@ movie-recommender/
 
 ---
 
-##  Setup & Installation
+##  Setup Development Environment
 
 ### 1. Clone the repository
 ```bash
@@ -75,7 +75,9 @@ pip install -r requirements.txt
 
 ### 3. Start MongoDB
 
-Ensure MongoDB is running locally on `mongodb://localhost:27017/`.
+Run Docker container of mongoDB
+docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
+
 
 ### 4. Generate content-based similarity matrix
 
