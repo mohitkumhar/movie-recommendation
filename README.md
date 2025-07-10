@@ -84,14 +84,18 @@ Run Docker container of mongoDB
 docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
 ```
 
-### 4. Generate all important pickle files and models
+### 4. Download Dataset
 
 Make Sure to ***Download dataset***, 
 It is necessary to generate all `.pkl` files.
 
+MovieLens Dataset: https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
 
 ```bash
-https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
+#!/bin/bash
+mkdir dataset
+cd dataset
+curl -L -o ~/Downloads/movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
 ```
 This dataset should be extracted in **`dataset/`** folder on the root dir
 
@@ -109,6 +113,7 @@ CB_filtering.ipynb      # for Content-Based filtering
 Make sure all `dataset/*.csv` exists - it is required for **Jupyter Notebook** (`.ipynb`) to create `.pkl` files.
 
 ### 6. Import preloaded MongoDB data
+
 
 ### 7. Run the app
 
