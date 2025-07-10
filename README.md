@@ -76,8 +76,9 @@ pip install -r requirements.txt
 ### 3. Start MongoDB
 
 Run Docker container of mongoDB
+```
 docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
-
+```
 
 ### 4. Generate content-based similarity matrix
 
