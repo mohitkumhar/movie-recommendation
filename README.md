@@ -35,25 +35,29 @@ A prototype web application that offers personalized movie recommendations using
 movie-recommender/
 │
 ├── app.py
-├── C_movies.pkl
-├── C_rating.pkl
-├── C_filtering_model.pkl
-├── CB_tfidfVectorizer.pkl
-├── CB_cosine_sim_matrix.pkl
+|
+├── test.py
+|
+|── requirements.txt
+├── requirements-linux.txt
+|
+├── a-b testing.ipynb
+|
+├── C_filtering.ipynb
+├── CB_filtering.ipynb
 │
-├── cosine_sim_matrix_generator.py     # Script to generate CB_cosine_sim_matrix.pkl
+├── runtime.txt
+|
+├── final_report.md
 │
-├── dataset/
-│   └── movies.csv                     # Used by the cosine similarity generator
 │
 ├── mongo_export/
-│   ├── users.json                     # Preloaded user profiles
-│   └── log_sample.json                # Sample user action logs
-│
-├── requirements.txt
+│   ├── users.json                # Preloaded user profiles
+│   └── log_sample.json           # Sample user action logs
+|
 └── templates/
-├── index.html                     # Username entry
-└── recommend.html                 # Movie dashboard & recommendations
+    ├── index.html                # Username entry
+    └── recommend.html            # Movie dashboard & recommendations
 
 ````
 
@@ -80,21 +84,33 @@ Run Docker container of mongoDB
 docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
 ```
 
-### 4. Generate content-based similarity matrix
+### 4. Generate all important pickle files and models
 
-Before running the app, you **must create the `CB_cosine_sim_matrix.pkl`** file.
+Make Sure to ***Download dataset***, 
+It is necessary to generate all `.pkl` files.
 
-Run this file:
 
 ```bash
-python cosine_sim_matrix_generator.py
+https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
+```
+This dataset should be extracted in **`dataset/`** folder on the root dir
+
+### 5. Generate all important pickle files and models
+
+Before running the app, you **must have all `.pkl`** files.
+
+Run both `.ipynb` files:
+
+```bash
+C_filtering.ipynb       # for Collaborative filtering
+CB_filtering.ipynb      # for Content-Based filtering
 ```
 
-Make sure `dataset/movies.csv` exists — it is required for vectorizing and generating the similarity matrix.
+Make sure all `dataset/*.csv` exists - it is required for **Jupyter Notebook** (`.ipynb`) to create `.pkl` files.
 
-### 5. Import preloaded MongoDB data
+### 6. Import preloaded MongoDB data
 
-### 6. Run the app
+### 7. Run the app
 
 ```bash
 python app.py
