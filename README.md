@@ -93,7 +93,6 @@ It is necessary to generate all `.pkl` files.
 MovieLens Dataset: https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
 
 ```bash
-#!/bin/bash
 mkdir dataset
 cd dataset
 curl -L -o ~/Downloads/movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
