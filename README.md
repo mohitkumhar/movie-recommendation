@@ -81,8 +81,14 @@ pip install -r requirements.txt
 
 Run Docker container of mongoDB
 ```
-docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
+# mongoDB Container on port 27017
+docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest 
 
+# import the users.json into mongodb users collection
+docker exec -i movieDB sh -c "mongoimport -c users -d user_db --jsonArray" < mongo_export\users.json
+
+# import the log_sample.json into mongodb users_log collection
+docker exec -i movieDB sh -c "mongoimport -c user_logs -d user_db --jsonArray" < mongo_export\log_sample.json
 
 ```
 Make sure to import preloaded MongoDB data and Ensure that MongoDB is running locally on `mongodb://localhost:27017/`
@@ -129,7 +135,10 @@ python app.py
 Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
+![Login Page Image](static/img/image.png)
+![Home Page Image](static/img/image-1.png)
 
+---
 ## How It Works
 
 ### Collaborative Filtering
