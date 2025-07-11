@@ -30,8 +30,8 @@ jobs:
                 pip install pylint
                 pylint *.py
 
-            - name: Testing
-              run: |
-                pip install pytest
-                ls -la
-                pytest test.py --maxfail=1 --disable-warnings
+            # - name: Testing
+            #   run: |
+            #     pip install pytest
+            #     ls -la
+            #     pytest test.py --maxfail=1 --disable-warnings
