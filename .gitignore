@@ -2,5 +2,4 @@ __pycache__/
 .v_env/
 .ipynb_checkpoints/
 *.csv
-!dataset/movie.csv
 *.pkl
