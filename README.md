@@ -82,26 +82,33 @@ pip install -r requirements.txt
 Run Docker container of mongoDB
 ```
 docker run --name movieDB -v D:\movieDB:/data/db -p 27017:27017 -d mongo:latest
+
+
 ```
-Ensure MongoDB is running locally on `mongodb://localhost:27017/`
+Make sure to import preloaded MongoDB data and Ensure that MongoDB is running locally on `mongodb://localhost:27017/`
 
 ### 4. Download Dataset
 
 Make Sure to ***Download dataset***, 
 It is necessary to generate all `.pkl` files.
 
+Download from-
+
 MovieLens Dataset: https://www.kaggle.com/datasets/grouplens/movielens-20m-dataset
 
+***OR***
+
+Run in **Powershell**
 ```bash
-mkdir dataset
-cd dataset
-curl -L -o ~/Downloads/movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
+curl -o movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
+
+Expand-Archive .\movielens-20m-dataset.zip .\
 ```
 This dataset should be extracted in **`dataset/`** folder on the root dir
 
 ### 5. Generate all important pickle files and models
 
-Before running the app, you **must have all `.pkl`** files.
+Before running the Flask app, you **must have all `.pkl`** files.
 
 Run both `.ipynb` files:
 
@@ -112,14 +119,13 @@ CB_filtering.ipynb      # for Content-Based filtering
 
 Make sure all `dataset/*.csv` exists - it is required for **Jupyter Notebook** (`.ipynb`) to create `.pkl` files.
 
-### 6. Import preloaded MongoDB data
+**Note:** <i>To run in Jupyter Notebook, you should install jupyter notebook by `pip install jupyter` or can also be run in `VS Code`</i>
 
-### 7. Run the app
+### 6. Run the app
 
 ```bash
 python app.py
 ```
-
 Open your browser at [http://localhost:5000](http://localhost:5000).
 
 ---
