@@ -236,10 +236,10 @@ def extract_movie_inputs(form_data):
 
         elif key.startswith("rating_"):
             movie_id = key.split("_")[1]
-            rating_value = request.form(key)
+            rating_value = form_data[key]
             rated.append({"movie_id": movie_id, "rating_value": rating_value})
 
-        return watched, rated
+    return watched, rated
 
 
 # -----------------------------------------------------------------------------
