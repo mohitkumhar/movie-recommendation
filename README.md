@@ -104,7 +104,7 @@ MovieLens Dataset: https://www.kaggle.com/datasets/grouplens/movielens-20m-datas
 
 ***OR***
 
-Run in **Powershell**
+Run Following Commands
 ```bash
 curl -L -o movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
 
