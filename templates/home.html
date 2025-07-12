@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Movie Recommendations</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    h2,
+    h3 {
+      color: #333;
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    .button-container {
+      margin: 1.5em 0;
+    }
+
+    .button-container button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 0.75em 1.25em;
+      margin: 0 0.5em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.2s ease-in-out;
+    }
+
+    .button-container button:hover {
+      background-color: #0056b3;
+    }
+
+    .movie-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5em;
+      padding: 1em;
+      max-width: 1200px;
+      margin: 0 auto 2em;
+    }
+
+    .movie-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 150px;
+      transition: transform 0.2s ease;
+      padding-bottom: 0.5em;
+    }
+
+    .movie-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .movie-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .movie-title {
+      padding: 0.5em;
+      font-size: 0.9em;
+      color: #444;
+      text-align: center;
+    }
+
+    .movie-rating {
+      margin: 0.25em 0;
+    }
+
+    /* Fixed star-rating CSS */
+    .star-rating {
+      direction: rtl;
+      display: inline-block;
+    }
+
+    .star-rating input[type="radio"] {
+      display: none;
+    }
+
+    .star-rating label {
+      font-size: 1.2em;
+      color: #ddd;
+      cursor: pointer;
+    }
+
+    /* When a radio is checked, color its label and all subsequent labels gold */
+    .star-rating input[type="radio"]:checked+label,
+    .star-rating input[type="radio"]:checked+label~label,
+    .star-rating label:hover,
+    .star-rating label:hover~label {
+      color: gold;
+    }
+
+    .movie-watched {
+      margin-top: 0.25em;
+    }
+
+    .movie-watched label {
+      font-size: 0.85em;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .movie-watched input[type="checkbox"] {
+      margin-right: 0.3em;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: #007bff;
+      color: #fff;
+      border-radius: 4px;
+      text-decoration: none;
+      font: inherit;
+    }
+
+    .btn:hover {
+      background: #0069d9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="button-container">
+    {% if user %}
+    <h2>Welcome, {{ user }}!</h2>
+
+    <form method="POST">
+      <input type="hidden" name="user" value="{{ user }}" />
+      <button type="submit" name="recommend_type" value="collab">Get Collaborative Recommendations</button>
+      <button type="submit" name="recommend_type" value="content">Get Content-Based Recommendations</button>
+    </form>
+
+    <!-- <button formaction="/logout" type="submit" name="logout" value="loging_out">Logout</button> -->
+    <a href="/logout" class="btn">Logout</a>
+    {% endif %}
+
+    {% if not user %}
+    <h2>Please Login! To get Custom Recommendations</h2>
+    <a href="/login" class="btn">Login</a>
+    {% endif %}
+    <form method="POST" action="/saveinfo">
+      <input type="hidden" name="user" value="{{ user }}" />
+
+
+
+      {% if recommendations %}
+      <h3>Recommended Movies for {{ user }}</h3>
+      <div class="movie-grid">
+        {% for movie in recommendations %}
+        <div class="movie-card">
+          <img src="{{ movie.poster_url }}" alt="{{ movie.title }}" />
+          <div class="movie-title">{{ movie.title }}</div>
+          <div class="movie-rating">
+            <div class="star-rating">
+              {% for i in range(5, 0, -1) %}
+              <input type="radio" id="star{{ i }}_{{ movie.id }}" name="rating_{{ movie.id }}" value="{{ i }}" {% if
+                movie.rating==i %}checked{% endif %}>
+              <label for="star{{ i }}_{{ movie.id }}">&#9733;</label>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="movie-watched">
+            <label>
+              <input type="checkbox" name="watched_{{ movie.id }}" {% if movie.watched %}checked{% endif %} />
+              Watched
+            </label>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+
+      {% if top_movies %}
+      <h3>Top {{ top_movies | length }} Movies</h3>
+      <div class="movie-grid">
+        {% for movie in top_movies %}
+        <div class="movie-card">
+          <img src="{{ movie.poster_url }}" alt="{{ movie.title }}" />
+          <div class="movie-title">{{ movie.title }}</div>
+          <div class="movie-rating">
+            <div class="star-rating">
+              {% for i in range(5, 0, -1) %}
+              <input type="radio" id="top_star{{ i }}_{{ movie.id }}" name="rating_{{ movie.id }}" value="{{ i }}" {% if
+                movie.rating==i %}checked{% endif %}>
+              <label for="top_star{{ i }}_{{ movie.id }}">&#9733;</label>
+              {% endfor %}
+            </div>
+          </div>
+          <div class="movie-watched">
+            <label>
+              <input type="checkbox" name="watched_{{ movie.id }}" {% if movie.watched %}checked{% endif %} />
+              Watched
+            </label>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <button type="submit" name="action" value="save_ratings">
+        Save Ratings & Watched Status
+      </button>
+      {% endif %}
+    </form>
+  </div>
+</body>
+
+</html>
