@@ -106,10 +106,11 @@ MovieLens Dataset: https://www.kaggle.com/datasets/grouplens/movielens-20m-datas
 
 Run in **Powershell**
 ```bash
-curl -o movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
+curl -L -o movielens-20m-dataset.zip https://www.kaggle.com/api/v1/datasets/download/grouplens/movielens-20m-dataset
 
-Expand-Archive .\movielens-20m-dataset.zip .\
+tar -xf movielens-20m-dataset.zip -C ./dataset
 ```
+
 This dataset should be extracted in **`dataset/`** folder on the root dir
 
 ### 5. Generate all important pickle files and models
