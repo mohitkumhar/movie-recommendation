@@ -27,11 +27,11 @@ logs_collection = db['user_logs']
 # Utility Functions
 # -----------------------------------------------------------------------------
 
-def log_user_interaction(user: str, action: str, details: Optional[dict] = None):
+def log_user_interaction(user: dict, action: str, details: Optional[dict] = None):
     """
     Log a user's action into the logs_collection with timestamp.
     Args: 
-        username (str): The username performing the action.
+        username (dict): The username and user id performing the action.
         action (str): The Action type (e.g, "login", "logout", "request reocmmendation").
         details (dict, optional): Additional metadata about the action
     """
@@ -92,9 +92,8 @@ def get_collaborative_recommendations(user_id: int, top_n: Optional[int] = 10):
 
     prediction = [] #  List to store (movieId, predicted_rating)
     for movie_id in unseen_movies:
-        if movie_id in unseen_movies:
-            pred = model.predict(user_id, movie_id)
-            prediction.append((movie_id, pred.est))
+        pred = model.predict(user_id, movie_id)
+        prediction.append((movie_id, pred.est))
 
     # Sort by predicted rating desceding
     prediction.sort(key=lambda x: x[1], reverse=True)
@@ -242,10 +241,61 @@ def extract_movie_inputs(form_data):
     return watched, rated
 
 
+def recommend(recommendation_type):
+    """
+    Render recommendation page.
+    Handle form submissions for ratings, recommendation requests, and logout.
+    """
+    user = request.form.get("user")
+
+    user_details = users_collection.find_one({'username': user})
+
+    if user_details is None:
+        return redirect(url_for('home'))
+
+    login_user = {"userId": user_details['userId'], "username": user_details['username']}
+
+    recommendations = []
+    # recommendation_type = request.form.get("recommend_type")
+    if (recommendation_type != "collab" and recommendation_type != "content"):
+        return redirect(url_for("home", user=user))
+
+    if user and recommendation_type:
+        user_id = users_collection.find_one({'username': user})['userId']
+        user_history = users_collection.find_one({'username': user})['moviesHistory']
+
+        if recommendation_type and (recommendation_type == "collab" or recommendation_type == "content"):
+            mov_titles = handle_recommendation(
+                user_id=user_id,
+                login_user=login_user, 
+                user_history=user_history,
+                recommendation_type=recommendation_type
+                )
+
+            for movie in mov_titles:
+                movie_ids = fetch_movie_id(movie)
+                recommendations.append(
+                    {
+                        "id": movie_ids,
+                        "title": movie,
+                        "poster_url": 
+                                    f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
+                    }
+                )
+
+    return recommendations
+    # return redirect(url_for('home', user=user))
+
+
 # -----------------------------------------------------------------------------
 # Flask Routes
 # -----------------------------------------------------------------------------
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
+def source_function():
+    return redirect(url_for('index'))
+
+
+@app.route('/login', methods=['GET', 'POST'])
 def index():
     """
     Render the login page. On POST, validate the user and redirect to recommendations.
@@ -257,83 +307,62 @@ def index():
         if user:
             login_user = {"userId": user['userId'], "username": user['username']}
             log_user_interaction(login_user, "login") # saving LogIn Successful log
-            return redirect(url_for('recommend', user=username))
+            return redirect(url_for('home', user=username))
         flash("Invalid userName not found")
 
     return render_template('index.html')
 
-@app.route('/recommend', methods=['GET', 'POST'])
-def recommend():
-    """
-    Render recommendation page. 
-    Handle form submissions for ratings, recommendation requests, and logout.
-    """
+
+top_movies_data = fetch_top_n_movies()
+@app.route('/home', methods= ['GET', 'POST'])
+def home():
+    # Top-n Rated Movies
     user = request.args.get("user")
-
     user_details = users_collection.find_one({'username': user})
-    login_user = {"userId": user_details['userId'], "username": user_details['username']}
 
+    if user_details is None:
+        user = None
     recommendations = []
-    recommendation_type = None
+    if request.method == 'POST':
+        recommendation_type = request.form.get('recommend_type')
+        recommendations =  recommend(recommendation_type)
+
+    return render_template(
+    'home.html',
+    user=user,
+    top_movies=top_movies_data,
+    recommendations = recommendations
+    )
+
+
+@app.route('/saveinfo', methods= ['POST'])
+def saveinfo():
+    user = request.form.get("user")
+    user_details = users_collection.find_one({'username': user})
+
+    if not user_details:
+        return redirect(url_for('index'))
+    login_user = {"userId": user_details['userId'], "username": user_details['username']}
 
     watched_movies, rated_movies = extract_movie_inputs(request.form)
 
-    # Top-n Rated Movies
-    top_movies_data = fetch_top_n_movies()
+    if not watched_movies or not rated_movies:
+        return redirect(url_for("home", user=user))
 
-    if user:
-        user_id = users_collection.find_one({'username': user})['userId']
-        user_history = users_collection.find_one({'username': user})['moviesHistory']
+    log_user_interaction(
+    login_user,
+    action="save_ratings",
+    details={
+        "watched_movies": watched_movies,
+        "rated_movies": rated_movies,
+    }
+    )
 
-        if request.method == 'POST':
-            recommendation_type = request.form.get('recommend_type')
+    return redirect(url_for('home', user=user))
 
-            action = request.form.get('action')
-
-            if action == "save_ratings":
-                log_user_interaction(
-                    login_user,
-                    action="save_ratings",
-                    details={
-                        "watched_movies": watched_movies,
-                        "rated_movies": rated_movies,
-                    }
-                )
-
-            elif recommendation_type:
-                mov_titles = handle_recommendation(
-                    user_id=user_id,
-                    login_user=login_user,
-                    user_history=user_history,
-                    recommendation_type=recommendation_type
-                    )
-
-                for movie in mov_titles:
-                    movie_ids = fetch_movie_id(movie)
-                    recommendations.append(
-                        {
-                            "id": movie_ids,
-                            "title": movie,
-                            "poster_url": 
-                                        f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
-                        }
-                    )
-
-            # Handles the logout action
-            if request.form.get("logout") == 'loging_out':
-                log_user_interaction(user, action="logout")
-                return redirect(url_for("index"))
-
-    # render recommendations template with data
-    return render_template(
-        'recommend.html',
-        user=user,
-        movie_list=movie_list,
-        recommendations=recommendations,
-        recommend_type=recommendation_type,
-        top_movies=top_movies_data
-        )
-
+@app.route('/logout')
+def logout():
+    return redirect(url_for('index'))
 
 # -----------------------------------------------------------------------------
 # Run the Flask development server
