@@ -22,7 +22,7 @@ def test_login_page_loads(client):
     """
     Test if the login page loads correctly
     """
-    response = client.get('/')
+    response = client.get('/login')
     assert response.status_code == 200
 
 # Test 2:  Simulate login with invalid user
@@ -32,7 +32,7 @@ def test_invalid_user_login(client):
     """
 
     with patch('app.users_collection.find_one', return_value=None):
-        response = client.post("/", data={'username': "wronguser"}, follow_redirects=True)
+        response = client.post("/login", data={'username': "wronguser"}, follow_redirects=True)
 
         assert response.status_code == 200
         assert b'invalid username not found' in response.data.lower()
