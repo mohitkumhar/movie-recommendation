@@ -243,8 +243,8 @@ def extract_movie_inputs(form_data):
 
 def recommend(recommendation_type):
     """
-    Render recommendation page.
-    Handle form submissions for ratings, recommendation requests, and logout.
+    Handles recommendations for user recommendation type and 
+    Returns the dictionary of recommended movies, with the movie id, title, poster
     """
     user = request.form.get("user")
 
@@ -257,17 +257,17 @@ def recommend(recommendation_type):
 
     recommendations = []
     # recommendation_type = request.form.get("recommend_type")
-    if (recommendation_type != "collab" and recommendation_type != "content"):
+    if recommendation_type in ('collab', 'content'):
         return redirect(url_for("home", user=user))
 
     if user and recommendation_type:
         user_id = users_collection.find_one({'username': user})['userId']
         user_history = users_collection.find_one({'username': user})['moviesHistory']
 
-        if recommendation_type and (recommendation_type == "collab" or recommendation_type == "content"):
+        if recommendation_type and (recommendation_type in ("collab", "content")):
             mov_titles = handle_recommendation(
                 user_id=user_id,
-                login_user=login_user, 
+                login_user=login_user,
                 user_history=user_history,
                 recommendation_type=recommendation_type
                 )
@@ -284,14 +284,17 @@ def recommend(recommendation_type):
                 )
 
     return recommendations
-    # return redirect(url_for('home', user=user))
 
+top_n_movies_data = fetch_top_n_movies()
 
 # -----------------------------------------------------------------------------
 # Flask Routes
 # -----------------------------------------------------------------------------
 @app.route('/')
 def source_function():
+    """
+    Redirect the root page to index page
+    """
     return redirect(url_for('index'))
 
 
@@ -313,9 +316,12 @@ def index():
     return render_template('index.html')
 
 
-top_movies_data = fetch_top_n_movies()
 @app.route('/home', methods= ['GET', 'POST'])
 def home():
+    """
+    Shows the top-20 movies on page,
+    It calls the "recommend" function to show recommendation
+    """
     # Top-n Rated Movies
     user = request.args.get("user")
     user_details = users_collection.find_one({'username': user})
@@ -330,13 +336,16 @@ def home():
     return render_template(
     'home.html',
     user=user,
-    top_movies=top_movies_data,
+    top_movies=top_n_movies_data,
     recommendations = recommendations
     )
 
 
 @app.route('/saveinfo', methods= ['POST'])
 def saveinfo():
+    """
+    API to save user log in database
+    """
     user = request.form.get("user")
     user_details = users_collection.find_one({'username': user})
 
@@ -362,6 +371,9 @@ def saveinfo():
 
 @app.route('/logout')
 def logout():
+    """
+    API to logout user and redirect them to index page(login page)
+    """
     return redirect(url_for('index'))
 
 # -----------------------------------------------------------------------------
