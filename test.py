@@ -36,3 +36,17 @@ def test_invalid_user_login(client):
 
         assert response.status_code == 200
         assert b'invalid username not found' in response.data.lower()
+
+# Test 3
+def test_logout(client):
+    """
+    Test the Logout API
+    """
+    response = client.get("/logout", follow_redirects=False)
+    assert response.status_code == 302
+
+    # follows the redirect from logout to index page
+
+    login_page = client.get("/logout", follow_redirects=True)
+    assert login_page.status_code == 200
+    assert b'Enter Your Username' in login_page.data
