@@ -247,43 +247,40 @@ def recommend(recommendation_type):
     Returns the dictionary of recommended movies, with the movie id, title, poster
     """
     user = request.form.get("user")
-
     user_details = users_collection.find_one({'username': user})
 
-    if user_details is None:
-        return redirect(url_for('home'))
+    # no such user, or invalid type → no recs
+    if not user_details or recommendation_type not in ('collab', 'content'):
+        return []
 
-    login_user = {"userId": user_details['userId'], "username": user_details['username']}
+    # prepare for logging + model call
+    login_user = {
+        "userId": user_details['userId'],
+        "username": user_details['username']
+    }
+    user_id = user_details['userId']
+    user_history = user_details.get('moviesHistory', [])
 
+    # call the right model
+    mov_titles = handle_recommendation(
+        user_id=user_id,
+        login_user=login_user,
+        user_history=user_history,
+        recommendation_type=recommendation_type
+    )
+
+    # build the list of dicts
     recommendations = []
-    # recommendation_type = request.form.get("recommend_type")
-    if recommendation_type in ('collab', 'content'):
-        return redirect(url_for("home", user=user))
-
-    if user and recommendation_type:
-        user_id = users_collection.find_one({'username': user})['userId']
-        user_history = users_collection.find_one({'username': user})['moviesHistory']
-
-        if recommendation_type and (recommendation_type in ("collab", "content")):
-            mov_titles = handle_recommendation(
-                user_id=user_id,
-                login_user=login_user,
-                user_history=user_history,
-                recommendation_type=recommendation_type
-                )
-
-            for movie in mov_titles:
-                movie_ids = fetch_movie_id(movie)
-                recommendations.append(
-                    {
-                        "id": movie_ids,
-                        "title": movie,
-                        "poster_url": 
-                                    f"https://picsum.photos/200/300?random={hash(movie) % 1000}"
-                    }
-                )
+    for title in mov_titles:
+        mid = fetch_movie_id(title)
+        recommendations.append({
+            "id": mid,
+            "title": title,
+            "poster_url": f"https://picsum.photos/200/300?random={hash(title) % 1000}"
+        })
 
     return recommendations
+
 
 top_n_movies_data = fetch_top_n_movies()
 
@@ -327,7 +324,9 @@ def home():
     user_details = users_collection.find_one({'username': user})
 
     if user_details is None:
-        user = None
+        flash("Please log in first.")
+        return redirect(url_for('index'))
+
     recommendations = []
     if request.method == 'POST':
         recommendation_type = request.form.get('recommend_type')
